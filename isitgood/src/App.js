@@ -15,9 +15,7 @@ class App extends Component {
       <div className="App">
         <Header className="App-header" />
         <Display />
-        <Box mt={8}>
-          <Footer />
-        </Box>
+        <Footer />
       </div>
     )
   }

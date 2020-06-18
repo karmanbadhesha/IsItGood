@@ -17,8 +17,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        maxWidth: 345,
+    media: {
+        height: '100%',
+        width: '100%'
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -51,6 +52,7 @@ export default function Movies(props) {
                     title={props.movie.title}
                     src={props.poster}
                     component="img"
+                    className={classes.media}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">

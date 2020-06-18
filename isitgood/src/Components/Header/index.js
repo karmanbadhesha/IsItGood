@@ -32,7 +32,7 @@ class Header extends Component {
                             <td><img alt="Logo" src="https://img.icons8.com/pastel-glyph/64/000000/movie-theater.png" /></td>
                             <td>
                                 <ThemeProvider theme={theme}>
-                                    <Typography variant="h2">Is It Good?</Typography>
+                                    <Typography variant="h3">Is It Good?</Typography>
                                 </ThemeProvider>
                             </td>
                         </tr>

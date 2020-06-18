@@ -14,6 +14,10 @@ const useStyles = theme => ({
         textAlign: 'center',
         color: 'black'
     },
+    grid: {
+        marginTop: "10px",
+        marginLeft: "10px",
+    }
 });
 
 
@@ -50,7 +54,7 @@ class Display extends Component {
 
                     const poster = "https://image.tmdb.org/t/p/w185" + movie.poster_path;
                     const eachMovie = <Movies movie={movie} poster={poster} key={movie.id} />
-                    movieRows.push(<Grid item xs={3} key={movie.id}>
+                    movieRows.push(<Grid item xs={2} key={movie.id}>
                         {eachMovie}
                     </Grid>);
                 })
@@ -68,8 +72,8 @@ class Display extends Component {
 
             <div className={classes.root}>
                 <Search searchHandler={this.searchHandler} />
-                <Button onClick={this.clearRow}>Clear</Button>
-                <Grid container spacing={3} style={{ margin: "10px" }}>
+                <Button variant="outlined" color="primary" onClick={this.clearRow}>Clear</Button>
+                <Grid container spacing={1} style={classes.grid}>
                     {this.state.rows}
                 </Grid >
 
