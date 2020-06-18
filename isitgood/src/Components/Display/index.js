@@ -40,7 +40,7 @@ class Display extends Component {
     }
 
     search(searchTerm) {
-        const url = "https://api.themoviedb.org/3/search/movie?api_key=680d8abb13fcad839ee173b73986bd48&language=en-US&query=";
+        const url = "https://api.themoviedb.org/3/search/movie?api_key=680d8abb13fcad839ee173b73986bd48&language=en-US&include_adult=false&sort_by=popularity.desc&query=";
         axios.get(url + this.state.search)
             .then(response => {
                 // this.results = response.data.results
@@ -69,7 +69,7 @@ class Display extends Component {
             <div className={classes.root}>
                 <Search searchHandler={this.searchHandler} />
                 <Button onClick={this.clearRow}>Clear</Button>
-                <Grid container spacing={3}>
+                <Grid container spacing={3} style={{ margin: "10px" }}>
                     {this.state.rows}
                 </Grid >
 

@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header className="App-header" />
         <Display />
         <Box mt={8}>
           <Footer />
