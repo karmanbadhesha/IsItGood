@@ -7,7 +7,12 @@ class Footer extends Component {
     }
     render() {
         return (
-            <div><a href="https://icons8.com/icon/111177/movie-theater">Movie Theater icon by Icons8</a></div>
+            <div>
+                <p>Created by Karman Badhesha - July 17, 2020 </p>
+                <p><a href="https://github.com/karmanbadhesha/IsItGood">Github</a></p>
+                <a href="https://icons8.com/icon/111177/movie-theater">Movie Theater icon by Icons8</a>
+
+            </div >
         );
     }
 }
